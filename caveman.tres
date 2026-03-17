@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="user" format=3]
+
+[ext_resource type="Script" path="res://User.gd" id="1_lomhj"]
+
+[resource]
+script = ExtResource("1_lomhj")
+name = "caveman"
+password = "aie"

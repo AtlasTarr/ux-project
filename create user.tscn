@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://dfb02ljlmqusp"]
+[gd_scene format=3 uid="uid://dp7qi7wjwgvj3"]
 
-[ext_resource type="Script" uid="uid://b3xlhapigqytk" path="res://login_page.gd" id="1_0fbet"]
+[ext_resource type="Script" uid="uid://by5sm4gchqrww" path="res://create_user.gd" id="1_phrsd"]
 
-[node name="Control" type="Control" unique_id=2109580580]
+[node name="Create user page" type="Control" unique_id=2109580580]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,7 +11,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource("1_0fbet")
+script = ExtResource("1_phrsd")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1644660882]
 layout_mode = 1
@@ -50,7 +50,7 @@ theme_override_constants/separation = 119
 
 [node name="Label" type="Label" parent="Panel/VBoxContainer/HBoxContainer" unique_id=835532625]
 layout_mode = 2
-text = "login"
+text = "create user"
 
 [node name="Label2" type="Label" parent="Panel/VBoxContainer/HBoxContainer" unique_id=1167547070]
 layout_mode = 2
@@ -98,19 +98,11 @@ text = "Password:"
 [node name="LineEdit2" type="LineEdit" parent="Panel/MarginContainer/VBoxContainer/Panel/VBoxContainer" unique_id=208859484]
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer/Panel/VBoxContainer" unique_id=238716533]
-layout_mode = 2
-
-[node name="Button3" type="Button" parent="Panel/MarginContainer/VBoxContainer/Panel/VBoxContainer/HBoxContainer" unique_id=1064169624]
+[node name="Button3" type="Button" parent="Panel/MarginContainer/VBoxContainer/Panel/VBoxContainer" unique_id=1064169624]
 custom_minimum_size = Vector2(68.28, 23.385)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_stretch_ratio = 6.89
-text = "Login"
+text = "create user"
 
-[node name="Button" type="Button" parent="Panel/MarginContainer/VBoxContainer/Panel/VBoxContainer/HBoxContainer" unique_id=364262625]
-layout_mode = 2
-text = "Sign up"
-
-[connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/Panel/VBoxContainer/HBoxContainer/Button3" to="." method="_on_button_3_pressed"]
-[connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/Panel/VBoxContainer/HBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/Panel/VBoxContainer/Button3" to="." method="_on_button_3_pressed"]

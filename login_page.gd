@@ -12,10 +12,6 @@ func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("Login Button"):
 		_on_button_3_pressed()
 
-	
-		
-		
-
 func _on_button_3_pressed() -> void:
 	var user_exists:bool = false
 	var logged_in: bool = false
@@ -36,3 +32,7 @@ func _on_button_3_pressed() -> void:
 			User_indicator.text = str("logged in as: ", _User.text)
 		elif user_exists && !logged_in:
 			User_indicator.text = str("failed to login")
+
+
+func _on_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://create user.tscn")
