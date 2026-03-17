@@ -8,6 +8,13 @@ const USER_DICT = preload("uid://bddhfm07axgqs")
 @onready var _password: LineEdit = $Panel/MarginContainer/VBoxContainer/Panel/VBoxContainer/LineEdit2
 @onready var User_indicator: Label = $Panel/VBoxContainer/HBoxContainer/Label2
 
+func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("Login Button"):
+		_on_button_3_pressed()
+
+	
+		
+		
 
 func _on_button_3_pressed() -> void:
 	var user_exists:bool = false
