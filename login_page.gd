@@ -1,7 +1,7 @@
 extends Control
 var user_logged_in:bool = false
 
-const USER_DICT = preload("uid://bddhfm07axgqs")
+const USER_DICT = preload("res://User_dict.tres")
 
 
 @onready var _User: LineEdit = $Panel/MarginContainer/VBoxContainer/Panel/VBoxContainer/LineEdit
