@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="User_Dict" format=3 uid="uid://bddhfm07axgqs"]
+
+[ext_resource type="Script" uid="uid://b55na1vbbypk6" path="res://Users.gd" id="1_4y87g"]
+[ext_resource type="Resource" uid="uid://bvkmom00i3g2q" path="res://User.tres" id="1_x6ks0"]
+
+[resource]
+script = ExtResource("1_4y87g")
+User_ref = {
+"User_resources": [ExtResource("1_x6ks0")]
+}
+metadata/_custom_type_script = "uid://b55na1vbbypk6"
