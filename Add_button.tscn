@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dqx0qmag1w6lh"]
+
+[node name="Button" type="Button" unique_id=668223811]
+custom_minimum_size = Vector2(120, 120)
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 44
+text = "+"

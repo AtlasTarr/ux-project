@@ -2,18 +2,25 @@
 
 [ext_resource type="Script" uid="uid://ct7534hfxd04k" path="res://siteview.gd" id="1_silqg"]
 [ext_resource type="Texture2D" uid="uid://c8e70bxeno1b3" path="res://9706577.png" id="2_nqjd7"]
+[ext_resource type="PackedScene" uid="uid://dqx0qmag1w6lh" path="res://Add_button.tscn" id="3_154dh"]
+[ext_resource type="PackedScene" uid="uid://bup1iiqims1vd" path="res://add_game_window.tscn" id="4_ww5bo"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_154dh"]
-bg_color = Color(0.8560673, 0.8560673, 0.856067, 1)
+bg_color = Color(0.85490197, 0.85490197, 0.85490197, 1)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ww5bo"]
 texture = ExtResource("2_nqjd7")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nqjd7"]
+bg_color = Color(0.85490197, 0.85490197, 0.85490197, 1)
 
 [node name="Control" type="Control" unique_id=1675422198]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 2.0
+offset_right = 2.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_silqg")
@@ -38,7 +45,7 @@ anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="HomePanel" type="Panel" parent="ColorRect/Panel" unique_id=55213778]
+[node name="HomePanel" type="Panel" parent="ColorRect/Panel" unique_id=55213778 groups=["Page_group"]]
 custom_minimum_size = Vector2(1340.65, 815.505)
 layout_mode = 1
 anchors_preset = 3
@@ -245,7 +252,7 @@ size_flags_horizontal = 0
 theme_override_font_sizes/font_size = 44
 text = "Game 1"
 
-[node name="Panel2" type="Panel" parent="ColorRect/Panel" unique_id=1937536350]
+[node name="ContactPanel" type="Panel" parent="ColorRect/Panel" unique_id=1837758158 groups=["Page_group"]]
 visible = false
 custom_minimum_size = Vector2(1340.65, 815.505)
 layout_mode = 1
@@ -258,22 +265,16 @@ offset_left = -1594.0
 offset_top = -914.0
 grow_horizontal = 0
 grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_nqjd7")
 
-[node name="Panel3" type="Panel" parent="ColorRect/Panel" unique_id=1530849398]
-visible = false
-custom_minimum_size = Vector2(1340.65, 815.505)
-layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -1594.0
-offset_top = -914.0
-grow_horizontal = 0
-grow_vertical = 0
+[node name="Label" type="Label" parent="ColorRect/Panel/ContactPanel" unique_id=997236111]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Contact"
 
-[node name="Panel4" type="Panel" parent="ColorRect/Panel" unique_id=547306390]
+[node name="InfoPanel" type="Panel" parent="ColorRect/Panel" unique_id=2049984243 groups=["Page_group"]]
 visible = false
 custom_minimum_size = Vector2(1340.65, 815.505)
 layout_mode = 1
@@ -286,22 +287,16 @@ offset_left = -1594.0
 offset_top = -914.0
 grow_horizontal = 0
 grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_nqjd7")
 
-[node name="Panel5" type="Panel" parent="ColorRect/Panel" unique_id=416872816]
-visible = false
-custom_minimum_size = Vector2(1340.65, 815.505)
-layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -1594.0
-offset_top = -914.0
-grow_horizontal = 0
-grow_vertical = 0
+[node name="Label" type="Label" parent="ColorRect/Panel/InfoPanel" unique_id=1147331743]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "info"
 
-[node name="Panel6" type="Panel" parent="ColorRect/Panel" unique_id=1969144701]
+[node name="CreatePanel" type="Panel" parent="ColorRect/Panel" unique_id=72031010 groups=["Page_group"]]
 visible = false
 custom_minimum_size = Vector2(1340.65, 815.505)
 layout_mode = 1
@@ -314,34 +309,14 @@ offset_left = -1594.0
 offset_top = -914.0
 grow_horizontal = 0
 grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_nqjd7")
 
-[node name="Panel7" type="Panel" parent="ColorRect/Panel" unique_id=2076718743]
-visible = false
-custom_minimum_size = Vector2(1340.65, 815.505)
-layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -1594.0
-offset_top = -914.0
-grow_horizontal = 0
-grow_vertical = 0
-
-[node name="Panel8" type="Panel" parent="ColorRect/Panel" unique_id=156357525]
-visible = false
-custom_minimum_size = Vector2(1340.65, 815.505)
-layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -1594.0
-offset_top = -914.0
-grow_horizontal = 0
-grow_vertical = 0
+[node name="Label" type="Label" parent="ColorRect/Panel/CreatePanel" unique_id=2109220816]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Create"
 
 [node name="MarginContainer" type="MarginContainer" parent="ColorRect/Panel" unique_id=1063221747]
 layout_mode = 0
@@ -354,27 +329,27 @@ theme_override_constants/margin_left = 260
 layout_mode = 2
 theme_override_constants/separation = 31
 
-[node name="Button" type="Button" parent="ColorRect/Panel/MarginContainer/HBoxContainer" unique_id=246079197]
+[node name="home_button" type="Button" parent="ColorRect/Panel/MarginContainer/HBoxContainer" unique_id=246079197]
 custom_minimum_size = Vector2(352.78, 76.255)
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 38
 text = "HOME"
 
-[node name="Button2" type="Button" parent="ColorRect/Panel/MarginContainer/HBoxContainer" unique_id=221920652]
+[node name="info_button" type="Button" parent="ColorRect/Panel/MarginContainer/HBoxContainer" unique_id=221920652]
 custom_minimum_size = Vector2(352.78, 76.255)
 layout_mode = 2
 theme_override_font_sizes/font_size = 54
 text = "Info	"
 
-[node name="Button3" type="Button" parent="ColorRect/Panel/MarginContainer/HBoxContainer" unique_id=1394398752]
+[node name="contact_button" type="Button" parent="ColorRect/Panel/MarginContainer/HBoxContainer" unique_id=1394398752]
 custom_minimum_size = Vector2(352.78, 76.255)
 layout_mode = 2
 size_flags_horizontal = 8
 theme_override_font_sizes/font_size = 54
 text = "Contact "
 
-[node name="Button4" type="Button" parent="ColorRect/Panel/MarginContainer/HBoxContainer" unique_id=344869522]
+[node name="create_button" type="Button" parent="ColorRect/Panel/MarginContainer/HBoxContainer" unique_id=344869522]
 custom_minimum_size = Vector2(352.78, 76.255)
 layout_mode = 2
 size_flags_horizontal = 8
@@ -391,46 +366,25 @@ grow_vertical = 2
 size_flags_horizontal = 0
 theme_override_constants/separation = 32
 
-[node name="Button" type="Button" parent="ColorRect/Panel/VBoxContainer2" unique_id=286793664]
-custom_minimum_size = Vector2(120, 120)
+[node name="Button" parent="ColorRect/Panel/VBoxContainer2" unique_id=668223811 instance=ExtResource("3_154dh")]
 layout_mode = 2
-size_flags_horizontal = 0
-theme_override_font_sizes/font_size = 44
-text = "Game 1"
 
-[node name="Button2" type="Button" parent="ColorRect/Panel/VBoxContainer2" unique_id=1583436594]
-custom_minimum_size = Vector2(120, 120)
-layout_mode = 2
-size_flags_horizontal = 0
-theme_override_font_sizes/font_size = 44
-text = "Game 2"
+[node name="Panel" parent="ColorRect/Panel" unique_id=1594708342 instance=ExtResource("4_ww5bo")]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 715.0
+offset_top = 394.0
+offset_right = 1115.0
+offset_bottom = 569.0
+grow_horizontal = 1
+grow_vertical = 1
 
-[node name="Button3" type="Button" parent="ColorRect/Panel/VBoxContainer2" unique_id=1457079508]
-custom_minimum_size = Vector2(120, 120)
-layout_mode = 2
-size_flags_horizontal = 0
-theme_override_font_sizes/font_size = 44
-text = "Game 3	"
-
-[node name="Button4" type="Button" parent="ColorRect/Panel/VBoxContainer2" unique_id=569185103]
-custom_minimum_size = Vector2(120, 120)
-layout_mode = 2
-size_flags_horizontal = 0
-theme_override_font_sizes/font_size = 44
-text = "Game 4"
-
-[node name="Button5" type="Button" parent="ColorRect/Panel/VBoxContainer2" unique_id=1237006900]
-custom_minimum_size = Vector2(120, 120)
-layout_mode = 2
-size_flags_horizontal = 0
-theme_override_font_sizes/font_size = 44
-text = "Game 5"
-
-[node name="Button6" type="Button" parent="ColorRect/Panel/VBoxContainer2" unique_id=14332633]
-custom_minimum_size = Vector2(120, 120)
-layout_mode = 2
-size_flags_horizontal = 0
-theme_override_font_sizes/font_size = 44
-text = "Game 6"
-
-[connection signal="pressed" from="ColorRect/Panel/MarginContainer/HBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="ColorRect/Panel/MarginContainer/HBoxContainer/home_button" to="." method="_on_home_button_pressed"]
+[connection signal="pressed" from="ColorRect/Panel/MarginContainer/HBoxContainer/info_button" to="." method="_on_info_button_pressed"]
+[connection signal="pressed" from="ColorRect/Panel/MarginContainer/HBoxContainer/contact_button" to="." method="_on_contact_button_pressed"]
+[connection signal="pressed" from="ColorRect/Panel/MarginContainer/HBoxContainer/create_button" to="." method="_on_create_button_pressed"]
+[connection signal="pressed" from="ColorRect/Panel/VBoxContainer2/Button" to="." method="_on_button_pressed"]

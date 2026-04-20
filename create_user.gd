@@ -33,3 +33,5 @@ func save_user():
 		dict.append(new_user_object)
 		ResourceSaver.save(new_users_dict, "res://User_dict.tres")
 		get_tree().change_scene_to_file("res://control.tscn")
+	else:
+		print("user_exists")

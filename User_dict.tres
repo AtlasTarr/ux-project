@@ -1,13 +1,15 @@
-[gd_resource type="Resource" script_class="User_Dict" format=3]
+[gd_resource type="Resource" script_class="User_Dict" format=3 uid="uid://dqwjx36ec6psf"]
 
-[ext_resource type="Script" path="res://Users.gd" id="1_4y87g"]
-[ext_resource type="Resource" path="res://User.tres" id="1_x6ks0"]
+[ext_resource type="Script" uid="uid://b55na1vbbypk6" path="res://Users.gd" id="1_4y87g"]
+[ext_resource type="Resource" uid="uid://bvkmom00i3g2q" path="res://User.tres" id="1_x6ks0"]
 [ext_resource type="Resource" path="res://Delimeat86.tres" id="2_t1kg2"]
 [ext_resource type="Resource" path="res://caveman.tres" id="3_wihga"]
+[ext_resource type="Resource" path="res://ori@mail.com.tres" id="4_y0fnq"]
+[ext_resource type="Resource" path="res://delilah.tres" id="5_j8o6e"]
 
 [resource]
 script = ExtResource("1_4y87g")
 User_ref = {
-"User_resources": [ExtResource("1_x6ks0"), ExtResource("2_t1kg2"), ExtResource("3_wihga")]
+"User_resources": [ExtResource("1_x6ks0"), ExtResource("2_t1kg2"), ExtResource("3_wihga"), ExtResource("4_y0fnq"), ExtResource("5_j8o6e")]
 }
 metadata/_custom_type_script = "uid://b55na1vbbypk6"

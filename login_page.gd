@@ -30,6 +30,8 @@ func _on_button_3_pressed() -> void:
 		if user_exists && logged_in:
 			user_logged_in = true
 			User_indicator.text = str("logged in as: ", _User.text)
+			UserManager.user_name = _User.text
+			get_tree().change_scene_to_file("res://sitview.tscn")
 		elif user_exists && !logged_in:
 			User_indicator.text = str("failed to login")
 

@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://bpv6fd73itoyk"]
+
+[ext_resource type="Script" uid="uid://c4qap42ftl6uv" path="res://cusrom_panel_scene.gd" id="1_c1q6m"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nqjd7"]
+bg_color = Color(0.85490197, 0.85490197, 0.85490197, 1)
+
+[node name="Custom_panel" type="Panel" unique_id=247155240 groups=["Page_group"]]
+custom_minimum_size = Vector2(1340.65, 815.505)
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1594.0
+offset_top = -914.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_nqjd7")
+script = ExtResource("1_c1q6m")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1263058770]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=507862776]
+layout_mode = 2
+
+[node name="GameLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1400834413]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 90
+text = "Games"
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1408149538]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25

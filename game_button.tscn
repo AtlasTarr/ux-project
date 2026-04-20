@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://c3vrnc1p4ty60"]
+
+[ext_resource type="Script" uid="uid://boi1k7ww20naj" path="res://game_button.gd" id="1_l7edf"]
+
+[node name="Game_button" type="Button" unique_id=668223811]
+custom_minimum_size = Vector2(120, 120)
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 44
+text = "+"
+autowrap_mode = 2
+script = ExtResource("1_l7edf")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
