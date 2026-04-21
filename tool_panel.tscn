@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://cgcqbsrui3u0"]
+
+[ext_resource type="Script" uid="uid://ckrgvbmd1mhsl" path="res://tool_panel.gd" id="1_6wy3r"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6wy3r"]
+bg_color = Color(0.32156864, 0.32156864, 0.32156864, 1)
+
+[node name="Panel" type="Panel" unique_id=1192780559 groups=["Tool_group"]]
+visible = false
+custom_minimum_size = Vector2(1514, 742)
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_6wy3r")
+script = ExtResource("1_6wy3r")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2001157115]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=209280832]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer" unique_id=944388918]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "tool label"

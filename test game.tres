@@ -1,9 +1,12 @@
 [gd_resource type="Resource" script_class="Game_page" format=3 uid="uid://divccqxxlxd8h"]
 
 [ext_resource type="Script" uid="uid://ltkvad2kiq3c" path="res://Game_page.gd" id="1_knobs"]
+[ext_resource type="Script" uid="uid://ba6rvp85sexqk" path="res://tool_resource.gd" id="2_gno2c"]
+[ext_resource type="Resource" uid="uid://ds5h8yvvdfyy7" path="res://Calc_resource.tres" id="3_evs4c"]
 
 [resource]
 script = ExtResource("1_knobs")
 game_name = "test game"
 game_description = "blah blah blah blah"
+tools = Array[ExtResource("2_gno2c")]([ExtResource("3_evs4c")])
 metadata/_custom_type_script = "uid://ltkvad2kiq3c"

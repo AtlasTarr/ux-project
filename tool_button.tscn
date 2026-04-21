@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://i4vicnhp5seb"]
+
+[ext_resource type="Script" uid="uid://dv02l73usgtt" path="res://tool_button.gd" id="1_v2n0m"]
+
+[node name="Tool_button" type="Button" unique_id=668223811]
+custom_minimum_size = Vector2(120, 120)
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 44
+text = "+"
+autowrap_mode = 2
+script = ExtResource("1_v2n0m")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

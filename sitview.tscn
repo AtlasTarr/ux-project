@@ -8,6 +8,8 @@
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_154dh"]
 bg_color = Color(0.85490197, 0.85490197, 0.85490197, 1)
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ww5bo"]
+
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ww5bo"]
 texture = ExtResource("2_nqjd7")
 
@@ -61,196 +63,91 @@ tooltip_text = "
 "
 theme_override_styles/panel = SubResource("StyleBoxFlat_154dh")
 
-[node name="Label" type="Label" parent="ColorRect/Panel/HomePanel" unique_id=548135035]
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect/Panel/HomePanel" unique_id=1133601257]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 237.0
-offset_top = -385.0
-offset_right = 598.0
-offset_bottom = -250.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 99
-text = "Recent"
 
-[node name="ProfileName" type="Label" parent="ColorRect/Panel/HomePanel" unique_id=1410645234]
+[node name="info pannel" type="Panel" parent="ColorRect/Panel/HomePanel/VBoxContainer" unique_id=551357470]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_ww5bo")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect/Panel/HomePanel/VBoxContainer/info pannel" unique_id=521073134]
 layout_mode = 1
-offset_left = 241.0
-offset_top = 75.0
-offset_right = 421.0
-offset_bottom = 118.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ColorRect/Panel/HomePanel/VBoxContainer/info pannel/VBoxContainer" unique_id=335692381]
+layout_mode = 2
+
+[node name="ProfileIcon" type="Button" parent="ColorRect/Panel/HomePanel/VBoxContainer/info pannel/VBoxContainer/HBoxContainer" unique_id=1241634182]
+modulate = Color(0.50140655, 0.5014065, 0.5014065, 1)
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_ww5bo")
+
+[node name="ProfileName" type="Label" parent="ColorRect/Panel/HomePanel/VBoxContainer/info pannel/VBoxContainer/HBoxContainer" unique_id=1410645234]
+layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 text = "Profile Name"
 
-[node name="Games" type="Label" parent="ColorRect/Panel/HomePanel" unique_id=1675577127]
-layout_mode = 0
-offset_left = 86.0
-offset_top = 255.0
-offset_right = 423.0
-offset_bottom = 379.0
+[node name="Panel" type="Panel" parent="ColorRect/Panel/HomePanel/VBoxContainer" unique_id=1986346261]
+custom_minimum_size = Vector2(0, 700)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="ColorRect/Panel/HomePanel/VBoxContainer/Panel" unique_id=315727386]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ColorRect/Panel/HomePanel/VBoxContainer/Panel/MarginContainer" unique_id=662135491]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect/Panel/HomePanel/VBoxContainer/Panel/MarginContainer/HBoxContainer" unique_id=573223269]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ColorRect/Panel/HomePanel/VBoxContainer/Panel/MarginContainer/HBoxContainer/VBoxContainer" unique_id=1921032479]
+layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 90
+theme_override_font_sizes/font_size = 50
 text = "Games"
+horizontal_alignment = 1
 
-[node name="ProfileIcon" type="Button" parent="ColorRect/Panel/HomePanel" unique_id=1241634182]
-modulate = Color(0.50140655, 0.5014065, 0.5014065, 1)
-custom_minimum_size = Vector2(59.33, 51.665)
-layout_mode = 1
-offset_left = 92.0
-offset_top = 58.0
-offset_right = 249.0
-offset_bottom = 209.0
-theme_override_styles/normal = SubResource("StyleBoxTexture_ww5bo")
+[node name="GridContainer" type="GridContainer" parent="ColorRect/Panel/HomePanel/VBoxContainer/Panel/MarginContainer/HBoxContainer/VBoxContainer" unique_id=1308218421]
+layout_mode = 2
+size_flags_vertical = 3
+columns = 2
 
-[node name="Game1" type="Button" parent="ColorRect/Panel/HomePanel" unique_id=2140077747]
-custom_minimum_size = Vector2(120, 120)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -406.0
-offset_top = 126.0
-offset_right = -77.0
-offset_bottom = 308.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 0
-theme_override_font_sizes/font_size = 44
-text = "Game 4"
+[node name="VBoxContainer2" type="VBoxContainer" parent="ColorRect/Panel/HomePanel/VBoxContainer/Panel/MarginContainer/HBoxContainer" unique_id=1656150272]
+layout_mode = 2
+size_flags_horizontal = 3
 
-[node name="Game2" type="Button" parent="ColorRect/Panel/HomePanel" unique_id=1282303524]
-custom_minimum_size = Vector2(120, 120)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -750.0
-offset_top = 126.0
-offset_right = -421.0
-offset_bottom = 308.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 0
-theme_override_font_sizes/font_size = 44
-text = "Game 3"
+[node name="Label" type="Label" parent="ColorRect/Panel/HomePanel/VBoxContainer/Panel/MarginContainer/HBoxContainer/VBoxContainer2" unique_id=1722414989]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "recent"
+horizontal_alignment = 1
 
-[node name="Game3" type="Button" parent="ColorRect/Panel/HomePanel" unique_id=541106207]
-custom_minimum_size = Vector2(120, 120)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -407.0
-offset_top = -74.0
-offset_right = -78.0
-offset_bottom = 108.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 0
-theme_override_font_sizes/font_size = 44
-text = "Game 2"
-
-[node name="Game4" type="Button" parent="ColorRect/Panel/HomePanel" unique_id=339368022]
-custom_minimum_size = Vector2(120, 120)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -751.0
-offset_top = -76.0
-offset_right = -422.0
-offset_bottom = 106.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 0
-theme_override_font_sizes/font_size = 44
-text = "Game 1"
-
-[node name="Game5" type="Button" parent="ColorRect/Panel/HomePanel" unique_id=925188690]
-custom_minimum_size = Vector2(120, 120)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 122.0
-offset_top = -240.0
-offset_right = 352.0
-offset_bottom = -88.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 0
-theme_override_font_sizes/font_size = 44
-text = "Game 1"
-
-[node name="Game6" type="Button" parent="ColorRect/Panel/HomePanel" unique_id=650712505]
-custom_minimum_size = Vector2(120, 120)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 379.0
-offset_top = -240.0
-offset_right = 609.0
-offset_bottom = -88.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 0
-theme_override_font_sizes/font_size = 44
-text = "Game 1"
-
-[node name="Game7" type="Button" parent="ColorRect/Panel/HomePanel" unique_id=1024155800]
-custom_minimum_size = Vector2(120, 120)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 127.0
-offset_top = -67.0
-offset_right = 357.0
-offset_bottom = 85.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 0
-theme_override_font_sizes/font_size = 44
-text = "Game 1"
-
-[node name="Game8" type="Button" parent="ColorRect/Panel/HomePanel" unique_id=1824347591]
-custom_minimum_size = Vector2(120, 120)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 378.0
-offset_top = -63.0
-offset_right = 608.0
-offset_bottom = 89.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 0
-theme_override_font_sizes/font_size = 44
-text = "Game 1"
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect/Panel/HomePanel/VBoxContainer/Panel/MarginContainer/HBoxContainer/VBoxContainer2" unique_id=2025556927]
+layout_mode = 2
+size_flags_vertical = 3
 
 [node name="ContactPanel" type="Panel" parent="ColorRect/Panel" unique_id=1837758158 groups=["Page_group"]]
 visible = false

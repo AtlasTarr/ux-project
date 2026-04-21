@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="tool_resource" format=3 uid="uid://ds5h8yvvdfyy7"]
+
+[ext_resource type="Script" uid="uid://ba6rvp85sexqk" path="res://tool_resource.gd" id="1_pk1n1"]
+
+[resource]
+script = ExtResource("1_pk1n1")
+tool_name = "Calc_resource"
+metadata/_custom_type_script = "uid://ba6rvp85sexqk"

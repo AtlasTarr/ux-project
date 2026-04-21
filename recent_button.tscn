@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cycx8kd0jn7fg"]
+
+[ext_resource type="Script" uid="uid://jgsba1pu12ek" path="res://recent_button.gd" id="1_8blr2"]
+
+[node name="Recent_button" type="Button" unique_id=668223811]
+custom_minimum_size = Vector2(120, 120)
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 44
+text = "+"
+autowrap_mode = 2
+script = ExtResource("1_8blr2")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
+[connection signal="pressed" from="." to="." method="button_pressed"]

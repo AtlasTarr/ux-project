@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Game_page" format=3 uid="uid://cxubtrej6o7tw"]
+
+[ext_resource type="Script" uid="uid://ltkvad2kiq3c" path="res://Game_page.gd" id="1_qc870"]
+
+[resource]
+script = ExtResource("1_qc870")
+game_name = "tails from the borderlands"
+game_description = "agjvfakjfbasfbh"
+metadata/_custom_type_script = "uid://ltkvad2kiq3c"
