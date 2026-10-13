@@ -5,8 +5,8 @@ extends Panel
 const TOOL_PANEL = preload("uid://cgcqbsrui3u0")
 const TOOL_BUTTON = preload("uid://i4vicnhp5seb")
 
-@onready var tool_container: MarginContainer = $MarginContainer/MarginContainer
-@onready var home_tool_buttons: VBoxContainer = $MarginContainer/MarginContainer/Home/MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer
+@onready var tool_container: MarginContainer = $MarginContainer/VBoxContainer2/MarginContainer
+@onready var home_tool_buttons: VBoxContainer = $MarginContainer/VBoxContainer2/MarginContainer/Home/MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer
 
 
 # Called when the node enters the scene tree for the first time.
@@ -22,6 +22,6 @@ func _ready() -> void:
 		tool_container.add_child(new_tool_page)
 
 func toggle():
-	for tool in $MarginContainer/MarginContainer.get_children():
+	for tool in tool_container.get_children():
 		if tool.is_in_group("Tool_group"):
 			tool.visible = false

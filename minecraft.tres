@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Game_page" format=3 uid="uid://cyql6o6svb1oy"]
+
+[ext_resource type="Script" uid="uid://ltkvad2kiq3c" path="res://Game_page.gd" id="1_ygcyn"]
+[ext_resource type="Script" uid="uid://ba6rvp85sexqk" path="res://tool_resource.gd" id="2_kkwx2"]
+
+[sub_resource type="Resource" id="Resource_ic664"]
+script = ExtResource("2_kkwx2")
+tool_name = "Minecraft resource calculator"
+metadata/_custom_type_script = "uid://ba6rvp85sexqk"
+
+[resource]
+script = ExtResource("1_ygcyn")
+game_name = "Minecraft"
+game_description = "Minecraft is a game created by Mojang"
+tools = Array[ExtResource("2_kkwx2")]([SubResource("Resource_ic664")])
+metadata/_custom_type_script = "uid://ltkvad2kiq3c"

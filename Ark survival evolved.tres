@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Game_page" format=3 uid="uid://bgvtpt8fstmxw"]
+
+[ext_resource type="Script" uid="uid://ltkvad2kiq3c" path="res://Game_page.gd" id="1_fsv8y"]
+[ext_resource type="Script" uid="uid://ba6rvp85sexqk" path="res://tool_resource.gd" id="2_e6ru0"]
+
+[sub_resource type="Resource" id="Resource_t2ut4"]
+script = ExtResource("2_e6ru0")
+tool_name = "Ark survival evolved resource calculator"
+metadata/_custom_type_script = "uid://ba6rvp85sexqk"
+
+[resource]
+script = ExtResource("1_fsv8y")
+game_name = "Ark survival evolved"
+game_description = "idk who Ark survival evolved is made by"
+tools = Array[ExtResource("2_e6ru0")]([SubResource("Resource_t2ut4")])
+metadata/_custom_type_script = "uid://ltkvad2kiq3c"

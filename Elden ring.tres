@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Game_page" format=3 uid="uid://q8s1ftd3u8oj"]
+
+[ext_resource type="Script" uid="uid://ltkvad2kiq3c" path="res://Game_page.gd" id="1_74jp0"]
+[ext_resource type="Script" uid="uid://ba6rvp85sexqk" path="res://tool_resource.gd" id="2_s63mr"]
+
+[sub_resource type="Resource" id="Resource_ic664"]
+script = ExtResource("2_s63mr")
+tool_name = "Elden ring build calculator"
+metadata/_custom_type_script = "uid://ba6rvp85sexqk"
+
+[resource]
+script = ExtResource("1_74jp0")
+game_name = "Elden ring"
+game_description = "Elden ring is a soulslike game created by fromsoft and J.R.R martin"
+tools = Array[ExtResource("2_s63mr")]([SubResource("Resource_ic664")])
+metadata/_custom_type_script = "uid://ltkvad2kiq3c"

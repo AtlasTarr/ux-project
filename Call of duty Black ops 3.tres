@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Game_page" format=3 uid="uid://df0ol3lb6qdnx"]
+
+[ext_resource type="Script" uid="uid://ltkvad2kiq3c" path="res://Game_page.gd" id="1_3ao03"]
+[ext_resource type="Script" uid="uid://ba6rvp85sexqk" path="res://tool_resource.gd" id="2_t51qw"]
+
+[sub_resource type="Resource" id="Resource_1vm1j"]
+script = ExtResource("2_t51qw")
+tool_name = "Call of duty Black ops 3 perk wiki"
+metadata/_custom_type_script = "uid://ba6rvp85sexqk"
+
+[resource]
+script = ExtResource("1_3ao03")
+game_name = "Call of duty Black ops 3"
+game_description = "idk who Bo3 is made by"
+tools = Array[ExtResource("2_t51qw")]([SubResource("Resource_1vm1j")])
+metadata/_custom_type_script = "uid://ltkvad2kiq3c"

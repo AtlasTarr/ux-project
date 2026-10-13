@@ -22,7 +22,7 @@ const CUSTOM_PANEL_SCENE = preload("uid://bpv6fd73itoyk")
 func _ready() -> void:
 	profile_name.text = UserManager.user_name
 	UserManager.recent_path = $ColorRect/Panel/HomePanel/VBoxContainer/Panel/MarginContainer/HBoxContainer/VBoxContainer2/VBoxContainer
-	UserManager.game_path = $ColorRect/Panel/VBoxContainer2
+	UserManager.game_path = $ColorRect/Panel/Panel2/ScrollContainer/VBoxContainer2
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -55,7 +55,7 @@ func create_new_page(game: Game_page):
 	new_page.game_details = game
 	new_page.name = game.game_name 
 	$ColorRect/Panel.add_child(new_page)
-	$ColorRect/Panel/VBoxContainer2.add_child(new_btn)
+	$ColorRect/Panel/Panel2/ScrollContainer/VBoxContainer2.add_child(new_btn)
 
 func _on_home_button_pressed() -> void:
 	toggle()

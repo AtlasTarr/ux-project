@@ -35,3 +35,7 @@ func save_user():
 		get_tree().change_scene_to_file("res://control.tscn")
 	else:
 		print("user_exists")
+
+
+func _on_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://control.tscn")

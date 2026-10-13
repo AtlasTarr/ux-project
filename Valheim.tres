@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Game_page" format=3 uid="uid://dol0jyqfqm1u5"]
+
+[ext_resource type="Script" uid="uid://ltkvad2kiq3c" path="res://Game_page.gd" id="1_akgsl"]
+[ext_resource type="Script" uid="uid://ba6rvp85sexqk" path="res://tool_resource.gd" id="2_jiqi0"]
+
+[sub_resource type="Resource" id="Resource_i8s80"]
+script = ExtResource("2_jiqi0")
+tool_name = "Valheim resource calculator"
+metadata/_custom_type_script = "uid://ba6rvp85sexqk"
+
+[resource]
+script = ExtResource("1_akgsl")
+game_name = "Valheim"
+game_description = "idk who Valheim is made by"
+tools = Array[ExtResource("2_jiqi0")]([SubResource("Resource_i8s80")])
+metadata/_custom_type_script = "uid://ltkvad2kiq3c"

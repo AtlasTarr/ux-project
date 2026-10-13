@@ -51,16 +51,20 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 90
 text = "Games"
 
-[node name="MarginContainer" type="MarginContainer" parent="MarginContainer" unique_id=806264762]
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer" unique_id=2130537155]
 layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer2" unique_id=806264762]
+layout_mode = 2
+size_flags_vertical = 3
 theme_override_constants/margin_top = 135
 
-[node name="Home" type="Panel" parent="MarginContainer/MarginContainer" unique_id=1027961358 groups=["Tool_group"]]
+[node name="Home" type="Panel" parent="MarginContainer/VBoxContainer2/MarginContainer" unique_id=1027961358 groups=["Tool_group"]]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_m3pgy")
 
-[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/MarginContainer/Home" unique_id=677133482]
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer2/MarginContainer/Home" unique_id=677133482]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -72,34 +76,40 @@ theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/MarginContainer/Home/MarginContainer" unique_id=2137558908]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer2/MarginContainer/Home/MarginContainer" unique_id=2137558908]
 layout_mode = 2
 theme_override_constants/separation = 313
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/MarginContainer/Home/MarginContainer/HBoxContainer" unique_id=885492794]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer2/MarginContainer/Home/MarginContainer/HBoxContainer" unique_id=885492794]
 custom_minimum_size = Vector2(600, 0)
 layout_mode = 2
 
-[node name="Label" type="Label" parent="MarginContainer/MarginContainer/Home/MarginContainer/HBoxContainer/VBoxContainer" unique_id=406008903]
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer2/MarginContainer/Home/MarginContainer/HBoxContainer/VBoxContainer" unique_id=406008903]
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
 text = "tools"
 horizontal_alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/MarginContainer/Home/MarginContainer/HBoxContainer/VBoxContainer" unique_id=231985309]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer2/MarginContainer/Home/MarginContainer/HBoxContainer/VBoxContainer" unique_id=231985309]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/MarginContainer/Home/MarginContainer/HBoxContainer" unique_id=1820910727]
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/VBoxContainer2/MarginContainer/Home/MarginContainer/HBoxContainer" unique_id=1820910727]
 custom_minimum_size = Vector2(600, 0)
 layout_mode = 2
 
-[node name="Label" type="Label" parent="MarginContainer/MarginContainer/Home/MarginContainer/HBoxContainer/VBoxContainer2" unique_id=1762780328]
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer2/MarginContainer/Home/MarginContainer/HBoxContainer/VBoxContainer2" unique_id=1762780328]
 layout_mode = 2
 theme_override_font_sizes/font_size = 40
 text = "recently used"
 horizontal_alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/MarginContainer/Home/MarginContainer/HBoxContainer/VBoxContainer2" unique_id=1674054150]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer2/MarginContainer/Home/MarginContainer/HBoxContainer/VBoxContainer2" unique_id=1674054150]
 layout_mode = 2
 size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer2" unique_id=140658563]
+custom_minimum_size = Vector2(0, 40)
+custom_maximum_size = Vector2(150, -1)
+layout_mode = 2
+text = "page home"

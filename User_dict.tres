@@ -1,16 +1,23 @@
-[gd_resource type="Resource" script_class="User_Dict" format=3 uid="uid://bsa0bpvy2opgx"]
+[gd_resource type="Resource" script_class="User_Dict" format=3 uid="uid://l5lky5pdug5k"]
 
-[ext_resource type="Script" uid="uid://b55na1vbbypk6" path="res://Users.gd" id="1_4y87g"]
-[ext_resource type="Resource" uid="uid://bvkmom00i3g2q" path="res://User.tres" id="1_x6ks0"]
-[ext_resource type="Resource" path="res://Delimeat86.tres" id="2_t1kg2"]
-[ext_resource type="Resource" path="res://caveman.tres" id="3_wihga"]
-[ext_resource type="Resource" path="res://ori@mail.com.tres" id="4_y0fnq"]
-[ext_resource type="Resource" path="res://delilah.tres" id="5_j8o6e"]
-[ext_resource type="Resource" path="res://kevin.tres" id="6_1fvwh"]
+[ext_resource type="Resource" uid="uid://bvkmom00i3g2q" path="res://User.tres" id="1"]
+[ext_resource type="Resource" path="res://Delimeat86.tres" id="2"]
+[ext_resource type="Resource" path="res://caveman.tres" id="3"]
+[ext_resource type="Resource" path="res://ori@mail.com.tres" id="4"]
+[ext_resource type="Resource" path="res://delilah.tres" id="5"]
+[ext_resource type="Resource" path="res://kevin.tres" id="6"]
+[ext_resource type="Resource" path="res://delimeat.tres" id="7"]
+[ext_resource type="Resource" path="res://mitchell.tres" id="9"]
+[ext_resource type="Resource" path="res://myPersonal@gmail.com.tres" id="10"]
+[ext_resource type="Resource" path="res://.tres" id="10_n15pv"]
+[ext_resource type="Script" uid="uid://b55na1vbbypk6" path="res://Users.gd" id="11"]
+
+[sub_resource type="Resource" id="Resource_bawlc"]
+metadata/__load_path__ = "res://.tres"
 
 [resource]
-script = ExtResource("1_4y87g")
+script = ExtResource("11")
 User_ref = {
-"User_resources": [ExtResource("1_x6ks0"), ExtResource("2_t1kg2"), ExtResource("3_wihga"), ExtResource("4_y0fnq"), ExtResource("5_j8o6e"), ExtResource("6_1fvwh")]
+"User_resources": [ExtResource("1"), ExtResource("2"), ExtResource("3"), ExtResource("4"), ExtResource("5"), ExtResource("6"), ExtResource("7"), SubResource("Resource_bawlc"), ExtResource("9"), ExtResource("10"), ExtResource("10_n15pv"), ExtResource("10_n15pv"), ExtResource("10_n15pv"), ExtResource("10_n15pv"), ExtResource("10_n15pv"), ExtResource("10_n15pv"), ExtResource("10_n15pv"), ExtResource("10_n15pv"), ExtResource("10_n15pv"), ExtResource("10_n15pv"), ExtResource("10_n15pv"), ExtResource("7"), ExtResource("10_n15pv"), ExtResource("7")]
 }
 metadata/_custom_type_script = "uid://b55na1vbbypk6"

@@ -98,11 +98,19 @@ text = "Password:"
 [node name="LineEdit2" type="LineEdit" parent="Panel/MarginContainer/VBoxContainer/Panel/VBoxContainer" unique_id=208859484]
 layout_mode = 2
 
-[node name="Button3" type="Button" parent="Panel/MarginContainer/VBoxContainer/Panel/VBoxContainer" unique_id=1064169624]
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer/Panel/VBoxContainer" unique_id=65793872]
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="Panel/MarginContainer/VBoxContainer/Panel/VBoxContainer/HBoxContainer" unique_id=1064169624]
 custom_minimum_size = Vector2(68.28, 23.385)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_stretch_ratio = 6.89
 text = "create user"
 
-[connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/Panel/VBoxContainer/Button3" to="." method="_on_button_3_pressed"]
+[node name="Button" type="Button" parent="Panel/MarginContainer/VBoxContainer/Panel/VBoxContainer/HBoxContainer" unique_id=911624890]
+layout_mode = 2
+text = "login"
+
+[connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/Panel/VBoxContainer/HBoxContainer/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/Panel/VBoxContainer/HBoxContainer/Button" to="." method="_on_button_pressed"]

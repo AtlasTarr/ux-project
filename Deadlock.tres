@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Game_page" format=3 uid="uid://c0p5lyi6mc5aa"]
+
+[ext_resource type="Script" uid="uid://ltkvad2kiq3c" path="res://Game_page.gd" id="1_1vm1j"]
+[ext_resource type="Script" uid="uid://ba6rvp85sexqk" path="res://tool_resource.gd" id="2_i8s80"]
+
+[sub_resource type="Resource" id="Resource_74jp0"]
+script = ExtResource("2_i8s80")
+tool_name = "Deadlock build calculator"
+metadata/_custom_type_script = "uid://ba6rvp85sexqk"
+
+[resource]
+script = ExtResource("1_1vm1j")
+game_name = "Deadlock"
+game_description = "Deadlock is a game created by valve"
+tools = Array[ExtResource("2_i8s80")]([SubResource("Resource_74jp0")])
+metadata/_custom_type_script = "uid://ltkvad2kiq3c"
