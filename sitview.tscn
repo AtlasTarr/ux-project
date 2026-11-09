@@ -51,7 +51,7 @@ grow_vertical = 2
 propagate_maximum_size = true
 clip_contents = true
 layout_mode = 0
-offset_top = 84.0
+offset_top = 227.0
 offset_right = 170.0
 offset_bottom = 964.0
 
@@ -69,7 +69,41 @@ layout_mode = 2
 size_flags_horizontal = 0
 theme_override_constants/separation = 32
 
-[node name="Button" parent="ColorRect/Panel/Panel2/ScrollContainer/VBoxContainer2" unique_id=668223811 instance=ExtResource("3_154dh")]
+[node name="Label" type="Label" parent="ColorRect/Panel/Panel2/ScrollContainer/VBoxContainer2" unique_id=2087615942]
+layout_mode = 2
+theme_override_font_sizes/font_size = 31
+text = "Games"
+
+[node name="Panel3" type="Panel" parent="ColorRect/Panel" unique_id=1133170791]
+propagate_maximum_size = true
+clip_contents = true
+layout_mode = 0
+offset_top = 10.0
+offset_right = 170.0
+offset_bottom = 208.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="ColorRect/Panel/Panel3" unique_id=1859604212]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="ColorRect/Panel/Panel3/ScrollContainer" unique_id=440400513]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 32
+alignment = 2
+
+[node name="Label" type="Label" parent="ColorRect/Panel/Panel3/ScrollContainer/VBoxContainer2" unique_id=398233356]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Add game"
+
+[node name="Button" parent="ColorRect/Panel/Panel3/ScrollContainer/VBoxContainer2" unique_id=1182946925 instance=ExtResource("3_154dh")]
 layout_mode = 2
 
 [node name="HomePanel" type="Panel" parent="ColorRect/Panel" unique_id=55213778 groups=["Page_group"]]
@@ -292,7 +326,7 @@ offset_bottom = 569.0
 grow_horizontal = 1
 grow_vertical = 1
 
-[connection signal="pressed" from="ColorRect/Panel/Panel2/ScrollContainer/VBoxContainer2/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="ColorRect/Panel/Panel3/ScrollContainer/VBoxContainer2/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="ColorRect/Panel/MarginContainer/HBoxContainer/home_button" to="." method="_on_home_button_pressed"]
 [connection signal="pressed" from="ColorRect/Panel/MarginContainer/HBoxContainer/info_button" to="." method="_on_info_button_pressed"]
 [connection signal="pressed" from="ColorRect/Panel/MarginContainer/HBoxContainer/contact_button" to="." method="_on_contact_button_pressed"]

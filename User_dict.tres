@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="User_Dict" format=3 uid="uid://l5lky5pdug5k"]
+[gd_resource type="Resource" script_class="User_Dict" format=3 uid="uid://dx06m30sheafd"]
 
 [ext_resource type="Resource" uid="uid://bvkmom00i3g2q" path="res://User.tres" id="1"]
 [ext_resource type="Resource" path="res://Delimeat86.tres" id="2"]
@@ -6,18 +6,16 @@
 [ext_resource type="Resource" path="res://ori@mail.com.tres" id="4"]
 [ext_resource type="Resource" path="res://delilah.tres" id="5"]
 [ext_resource type="Resource" path="res://kevin.tres" id="6"]
-[ext_resource type="Resource" path="res://delimeat.tres" id="7"]
+[ext_resource type="Resource" uid="uid://4p280emtcfu7" path="res://Delimeat.tres" id="7"]
 [ext_resource type="Resource" path="res://mitchell.tres" id="9"]
 [ext_resource type="Resource" path="res://myPersonal@gmail.com.tres" id="10"]
-[ext_resource type="Resource" path="res://.tres" id="10_n15pv"]
+[ext_resource type="Resource" uid="uid://4p280emtcfu7" path="res://delimeat.tres" id="10_n15pv"]
 [ext_resource type="Script" uid="uid://b55na1vbbypk6" path="res://Users.gd" id="11"]
-
-[sub_resource type="Resource" id="Resource_bawlc"]
-metadata/__load_path__ = "res://.tres"
+[ext_resource type="Resource" path="res://delimate.tres" id="11_r2bpc"]
 
 [resource]
 script = ExtResource("11")
 User_ref = {
-"User_resources": [ExtResource("1"), ExtResource("2"), ExtResource("3"), ExtResource("4"), ExtResource("5"), ExtResource("6"), ExtResource("7"), SubResource("Resource_bawlc"), ExtResource("9"), ExtResource("10"), ExtResource("10_n15pv"), ExtResource("10_n15pv"), ExtResource("10_n15pv"), ExtResource("10_n15pv"), ExtResource("10_n15pv"), ExtResource("10_n15pv"), ExtResource("10_n15pv"), ExtResource("10_n15pv"), ExtResource("10_n15pv"), ExtResource("10_n15pv"), ExtResource("10_n15pv"), ExtResource("7"), ExtResource("10_n15pv"), ExtResource("7")]
+"User_resources": [ExtResource("1"), ExtResource("2"), ExtResource("3"), ExtResource("4"), ExtResource("5"), ExtResource("6"), ExtResource("7"), ExtResource("9"), ExtResource("10"), ExtResource("7"), ExtResource("10_n15pv"), ExtResource("11_r2bpc")]
 }
 metadata/_custom_type_script = "uid://b55na1vbbypk6"

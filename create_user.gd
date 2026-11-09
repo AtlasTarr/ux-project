@@ -2,10 +2,15 @@ extends Control
 
 const USER_DICT = preload("res://User_dict.tres")
 
+var users: Array
 
 @onready var _User: LineEdit = $Panel/MarginContainer/VBoxContainer/Panel/VBoxContainer/LineEdit
 @onready var _password: LineEdit = $Panel/MarginContainer/VBoxContainer/Panel/VBoxContainer/LineEdit2
 @onready var User_indicator: Label = $Panel/VBoxContainer/HBoxContainer/Label2
+
+func _ready() -> void:
+	for username in USER_DICT.get("User_ref").get("User_resources"):
+		users.append(username.get("name"))
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("Login Button"):
@@ -17,10 +22,8 @@ func _on_button_3_pressed() -> void:
 
 
 func save_user():
-	var user_exists:int = -1
-	var users = USER_DICT.get("User_ref").get("User_resources")
-	user_exists = users.find(_User.text)
-	if user_exists < 0:
+	print(users)
+	if !users.has(_User.text) && _User.text != "" && _password.text != "":
 		var new_user = user.new()
 		new_user.name = _User.text
 		new_user.password = _password.text
@@ -33,8 +36,12 @@ func save_user():
 		dict.append(new_user_object)
 		ResourceSaver.save(new_users_dict, "res://User_dict.tres")
 		get_tree().change_scene_to_file("res://control.tscn")
-	else:
-		print("user_exists")
+	elif  users.has(_User.text):
+		$Panel/VBoxContainer/HBoxContainer/Label2.text = "user exists"
+	elif _User.text == "":
+		$Panel/VBoxContainer/HBoxContainer/Label2.text = "Username cannot be blank"
+	elif _password.text == "":
+		$Panel/VBoxContainer/HBoxContainer/Label2.text = "password cannot be blank"
 
 
 func _on_button_pressed() -> void:

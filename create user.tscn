@@ -31,7 +31,7 @@ anchor_right = 0.60811204
 anchor_bottom = 0.76774114
 offset_left = -45.00006
 offset_top = 98.0
-offset_right = -47.575073
+offset_right = 90.86487
 offset_bottom = -244.77045
 grow_horizontal = 2
 grow_vertical = 2
@@ -50,6 +50,7 @@ theme_override_constants/separation = 119
 
 [node name="Label" type="Label" parent="Panel/VBoxContainer/HBoxContainer" unique_id=835532625]
 layout_mode = 2
+theme_override_font_sizes/font_size = 25
 text = "create user"
 
 [node name="Label2" type="Label" parent="Panel/VBoxContainer/HBoxContainer" unique_id=1167547070]
@@ -65,7 +66,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 10
+theme_override_constants/margin_left = 42
 theme_override_constants/margin_top = 34
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10

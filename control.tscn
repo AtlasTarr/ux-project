@@ -50,6 +50,7 @@ theme_override_constants/separation = 119
 
 [node name="Label" type="Label" parent="Panel/VBoxContainer/HBoxContainer" unique_id=835532625]
 layout_mode = 2
+theme_override_font_sizes/font_size = 25
 text = "login"
 
 [node name="Label2" type="Label" parent="Panel/VBoxContainer/HBoxContainer" unique_id=1167547070]

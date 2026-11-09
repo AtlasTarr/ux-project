@@ -1,8 +1,7 @@
-[gd_resource type="Resource" script_class="user" format=3]
+[gd_resource type="Resource" script_class="user" format=3 uid="uid://4p280emtcfu7"]
 
-[ext_resource type="Script" path="res://User.gd" id="1_buar8"]
+[ext_resource type="Script" uid="uid://dm43xtuv4a85d" path="res://User.gd" id="1_buar8"]
 
 [resource]
 script = ExtResource("1_buar8")
 name = "delimeat"
-password = ""
